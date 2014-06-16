@@ -1,0 +1,61 @@
+body {
+    font-family: 'VT323', monospace;
+    font-weight: 400;
+}
+
+td {
+    width: 28px;
+    height: 28px;
+    border: 3px;
+    box-sizing: border-box;
+}
+
+#game-holder {
+    border-spacing: 0;
+    border-radius: 13px;
+    border: 3px solid #aaaaaa;
+    border-collapse: separate;
+}
+
+.button-holder {
+    margin-top: 5px;
+}
+
+td.visited {
+    background: #066100;
+    width: 28px;
+}
+
+td.border-tr {
+    border-top-right-radius: 10px;
+    border-top: 3px solid black;
+    border-right: 3px solid black;
+}
+
+td.border-tl {
+    border-top-left-radius: 10px;
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+}
+
+td.border-br {
+    border-bottom-right-radius: 10px;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+}
+
+td.border-bl {
+    border-bottom-left-radius: 10px;
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+}
+
+td.vertical {
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+}
+
+td.horizontal {
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}

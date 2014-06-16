@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="lib/jquery-2.1.0/js/jquery.min.js"></script>
+    <script src="game.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'/>
+    <link href="lib/bootstrap-3.1.1/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="game.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<script type="text/javascript">
+    $(function () {
+        var game = new SnakeGame();
+        game.initialize();
+    });
+</script>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <h4>
+                Score: <span id="score-holder">0</span>
+            </h4>
+            <table id="game-holder">
+                <tfoot class="button-holder">
+                <tr>
+                    <td colspan="9">
+                        <div class="btn-group btn-group-justified">
+                            <div class="btn-group">
+                                <button id="button-left" type="button" class="btn btn-default">
+                                    <span class="glyphicon glyphicon-arrow-left"></span>
+                                </button>
+                            </div>
+
+                            <div class="btn-group">
+                                <button id="button-down" type="button" class="btn btn-default">
+                                    <span class="glyphicon glyphicon-arrow-down"></span>
+                                </button>
+                            </div>
+
+                            <div class="btn-group">
+                                <button id="button-up" type="button" class="btn btn-default">
+                                    <span class="glyphicon glyphicon-arrow-up"></span>
+                                </button>
+                            </div>
+
+                            <div class="btn-group">
+                                <button id="button-right" type="button" class="btn btn-default">
+                                    <span class="glyphicon glyphicon-arrow-right"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                </tfoot>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row button-holder">
+        <div class="col-md-12">
+            <button id="start-button" class="btn btn-primary">Start</button>
+            <button id="reset-button" class="btn btn-info disabled">Reset</button>
+        </div>
+    </div>
+    <h3>High Scores</h3>
+    <ol id="high-scores">
+
+    </ol>
+</div>
+</body>
+</html>
